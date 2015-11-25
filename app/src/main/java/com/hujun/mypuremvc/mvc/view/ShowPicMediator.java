@@ -1,6 +1,7 @@
 package com.hujun.mypuremvc.mvc.view;
 
 import android.os.Handler;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -11,7 +12,7 @@ import com.hujun.mypuremvc.mvc.NotificationNames;
 import com.hujun.mypuremvc.mvc.controller.GetHttpPicCommand;
 import com.hujun.mypuremvc.mvc.model.ShowPicProxy;
 import com.hujun.mypuremvc.mvc.model.bean.ShowPicBean;
-import com.hujun.mypuremvc.mvc.view.ui.ShowPicActivity;
+import com.hujun.mypuremvc.mvc.view.activity.ShowPicActivity;
 
 import org.puremvc.java.multicore.interfaces.INotification;
 import org.puremvc.java.multicore.patterns.mediator.Mediator;
@@ -30,7 +31,8 @@ public class ShowPicMediator extends Mediator implements View.OnClickListener {
         super(NAME, null);
         this.mMainActivity = act;
 
-        mImageView = (ImageView)mMainActivity.findViewById(R.id.imageView);
+        Fragment fragment = mMainActivity.getSupportFragmentManager().findFragmentById(R.id.fragment);
+        mImageView = (ImageView)fragment.getView().findViewById(R.id.imageView);
         mBtnPrev = (Button)mMainActivity.findViewById(R.id.btnPrev);
         mBtnNext = (Button)mMainActivity.findViewById(R.id.btnNext);
 

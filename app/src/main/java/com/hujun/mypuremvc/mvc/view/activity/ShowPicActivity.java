@@ -1,13 +1,12 @@
-package com.hujun.mypuremvc.mvc.view.ui;
+package com.hujun.mypuremvc.mvc.view.activity;
 
 import android.os.Bundle;
-import android.widget.Button;
 
 import com.hujun.mypuremvc.R;
 import com.hujun.mypuremvc.mvc.MyAppFacade;
 import com.hujun.mypuremvc.mvc.view.ShowPicMediator;
 
-public class ShowPicActivity extends BaseActivity {
+public class ShowPicActivity extends BaseFragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

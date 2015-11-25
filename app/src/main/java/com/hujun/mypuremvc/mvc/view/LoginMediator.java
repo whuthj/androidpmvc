@@ -2,8 +2,8 @@ package com.hujun.mypuremvc.mvc.view;
 
 import com.hujun.mypuremvc.mvc.controller.GotoActCommand;
 import com.hujun.mypuremvc.mvc.model.bean.GotoActBean;
-import com.hujun.mypuremvc.mvc.view.ui.LoginActivity;
-import com.hujun.mypuremvc.mvc.view.ui.ShowPicActivity;
+import com.hujun.mypuremvc.mvc.view.activity.LoginActivity;
+import com.hujun.mypuremvc.mvc.view.activity.ShowPicActivity;
 
 import org.puremvc.java.multicore.interfaces.INotification;
 import org.puremvc.java.multicore.patterns.mediator.Mediator;

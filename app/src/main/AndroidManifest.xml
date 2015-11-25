@@ -18,14 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvc.view.ui.LoginActivity" />
+        <activity android:name=".mvc.view.activity.LoginActivity" />
 
         <receiver
             android:name=".receiver.ScreenBroadcastReceiver"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".mvc.view.ui.ShowPicActivity"></activity>
+        <activity android:name=".mvc.view.activity.ShowPicActivity" />
     </application>
 
 </manifest>

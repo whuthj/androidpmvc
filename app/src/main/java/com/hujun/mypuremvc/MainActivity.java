@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import com.hujun.mypuremvc.mvc.MyAppFacade;
 import com.hujun.mypuremvc.mvc.view.MainMediator;
-import com.hujun.mypuremvc.mvc.view.ui.BaseActivity;
+import com.hujun.mypuremvc.mvc.view.activity.BaseActivity;
 import com.hujun.mypuremvc.receiver.ScreenBroadcastReceiver;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {

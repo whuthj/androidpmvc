@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hujun.mypuremvc.mvc.view.ui.LoginActivity">
+    tools:context="com.hujun.mypuremvc.mvc.view.activity.LoginActivity">
 
     <Button
         android:layout_width="wrap_content"
@@ -17,4 +17,19 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/tabstrip"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:gravity="center" />
+    </android.support.v4.view.ViewPager>
 </RelativeLayout>

@@ -13,7 +13,7 @@ import com.hujun.mypuremvc.mvc.model.ShowPicProxy;
 import com.hujun.mypuremvc.mvc.model.bean.GotoActBean;
 import com.hujun.mypuremvc.mvc.model.bean.ShowPicBean;
 import com.hujun.mypuremvc.mvc.model.bean.StartupBean;
-import com.hujun.mypuremvc.mvc.view.ui.LoginActivity;
+import com.hujun.mypuremvc.mvc.view.activity.LoginActivity;
 import com.hujun.mypuremvc.MainActivity;
 
 import org.puremvc.java.multicore.interfaces.INotification;

@@ -1,9 +1,8 @@
-package com.hujun.mypuremvc.mvc.view.ui;
+package com.hujun.mypuremvc.mvc.view.activity;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseFragmentActivity extends FragmentActivity {
     protected void registerMediator() {
 
     }
