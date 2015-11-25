@@ -1,10 +1,10 @@
 package com.hujun.mypuremvc.mvc.view.activity;
 
+import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,9 +33,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         registerMediator();
 
         pager = (ViewPager) this.findViewById(R.id.viewpager);
+        pager.setBackgroundColor(Color.parseColor("#663300"));
+        pager.setOffscreenPageLimit(3);
         tabStrip = (PagerTabStrip) this.findViewById(R.id.tabstrip);
+        tabStrip.setBackgroundColor(Color.parseColor("#993300"));
+        tabStrip.setTabIndicatorColor(Color.parseColor("#FF0000"));
+        tabStrip.setTextColor(Color.parseColor("#FFFFFF"));
         tabStrip.setDrawFullUnderline(false);
-        tabStrip.setTextSpacing(200);
+        //tabStrip.setTextSpacing(200);
 
         View view1 = LayoutInflater.from(this).inflate(R.layout.activity_show_pic, null);
         View view2 = LayoutInflater.from(this).inflate(R.layout.activity_login, null);
